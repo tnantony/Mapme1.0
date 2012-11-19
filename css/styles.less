@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/*COLORS AND BGs*/
+
+@body-bgcolor: #CCCCCC;
+
+@light-grey:#666666;
+@light-blue: #00ccff;
+
+
+/*FONTS */
+@base-font-size:14px;
+
+/*DIMENSIONS*/
+
+@header-height:48px;
+@header-width:100%;
+
+@logo-width:170px;
+
+@stepstab-width:640px;
+@stepstab-height:300px;
+@steps-switchtab-height:75px;
+@steps-chartstab-height:222px;
+
+@giftstab-width:300px;
+@giftsitemstab-height :96px;
+@giftviewtab-height:30px;
+
+@buddiestab-width:100%;
+
+
+
+body {
+font-size:@base-font-size;
+background-color:@body-bgcolor;
+background-image:url(../images/body_bg.png);
+}
+
+
+#LayoutDiv1 { 
+background: @body-bgcolor; 
+}
+
+#header {
+width:@header-width; height:@header-height; 
+background:url(../images/header_bg.png);
+border:1px solid @light-grey;
+margin-top:20px;
+}
+
+#logo {
+width:@logo-width; height:@header-height; 
+background:url(../images/logo.png);
+float:left;
+}
+
+#userstatus, {
+width:@logo-width; height:@header-height; 
+float:right;
+border-left:1px solid @light-grey;
+}
+
+#notificationstatus {
+width:20px; height:@header-height; 
+float:right;
+}
+
+blockquote {
+width:auto;
+float:right;
+color:@light-grey;
+}
+
+#steps, #badges {
+height:@stepstab-height;
+width:@stepstab-width;
+float:left;
+}
+
+#switchtab, #badgestopic {
+height:@steps-switchtab-height;
+width:@stepstab-width;
+background:url(../images/switch_bg.png);
+}
+
+#charts {
+height:@steps-chartstab-height;
+width:@stepstab-width;
+background:url(../images/chart_bg.png);
+}
+
+#todaystatus {
+width:100px;
+float:left;
+}
+
+#todaystatus h3 {
+margin:0; 
+padding:5px;
+color:@light-blue;
+}
+
+#todaystatus ul {
+margin:0; 
+padding:5px;
+color:@light-blue;
+list-style:none;
+font-size:10px;
+}
+
+#todaystatus ul li{
+padding-bottom:5px;
+}
+
+#todaystatus ul li span{
+color:@light-grey;
+font-size:14px;
+}
+
+#gifts, #treks {
+height:@stepstab-height;
+width:@giftstab-width;
+float:right;
+}
+
+#giftstopic, #trekstopic {
+height:@steps-switchtab-height;
+width:@giftstab-width;
+background:url(../images/switch_bg.png);
+}
+
+.giftitems {
+width:@giftstab-width;
+height:@giftsitemstab-height;
+background:url(../images/chart_bg.png);
+}
+
+#giftview {
+width:@giftstab-width;
+height:@giftviewtab-height;
+background:url(../images/chart_bg.png);
+}
+
+#treks {
+float:left;
+margin-top:5px;
+}
+
+#badges {
+float:right;
+margin-top:5px;
+}
+
+#badgesholder{
+height:@steps-chartstab-height;
+width:@stepstab-width;
+background:url(../images/chart_bg.png);
+}
+
+.trekmap, #map_canvas {
+height:@steps-chartstab-height;
+width:@giftstab-width;
+}
+
+#buddies {
+height:@stepstab-height;
+width:@buddiestab-width;
+margin-top:5px;
+}
+
+#buddiestopic {
+height:@steps-switchtab-height;
+width:@buddiestab-width;
+background:url(../images/switch_bg.png);
+}
+
+#buddiesholder {
+height:@steps-chartstab-height;
+width:@buddiestab-width;
+background:url(../images/chart_bg.png);
+}
